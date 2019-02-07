@@ -26,9 +26,6 @@ config = getBashParameters(config, BASH_COLORS_HELPER);
 
 // if user didn't modifed "PORT" object
 // then read value from "config.json"
-if(PORT === 9001) {
-    PORT = config.port;
-}
 if(isUseHTTPs === false) {
     isUseHTTPs = config.isUseHTTPs;
 }
